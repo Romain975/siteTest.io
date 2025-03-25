@@ -16,6 +16,49 @@ header h1 {
   margin: 0;
   font-size: 2.5em;
 }
+header button {
+  background-color: black;
+  color: white;
+  padding: 15px 50px;
+  cursor: pointer;
+  border-radius: 15px 15px 15px 15px;
+}
+#presentation {
+  padding: 40px 20px;;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes image to the bottom */
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+#presentation img {
+  display: block;
+  width: 100%;
+}
+#presentation div.text {
+  position: absolute;
+  bottom: 10%; /* Adjust to position the text */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Cursive', sans-serif; /* Match the style */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Soft shadow for readability */
+  white-space: nowrap;
+  width: 80%;
+  background-color: rgba(128, 128, 128, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 700px;
+  box-sizing: border-box;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
 nav {
   background-color: #023e8a;
   text-align: center;
